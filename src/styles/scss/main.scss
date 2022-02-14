@@ -1,0 +1,82 @@
+body{
+  background: black;
+}
+$color: red;
+$primary-color: black;
+$white: white;
+
+
+.name{
+  width: 12%;
+  margin-left: 44%;
+  margin-top: 10%;
+  &--user{
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color: $color;
+  }
+}
+
+.item{
+  display: flex;
+  justify-content: space-around;
+  &--vector{
+    margin-top: 5%;
+    width: 270px;
+    height: 257px;
+    background: $white;
+    border-radius: 10px;
+  }
+  &--ges{
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+.cont{
+  margin-bottom: 8%;
+  margin-top: 2%;
+  width: 10%;
+  &--items{
+    display: flex;
+    &--bag{
+      width: 700px;
+      height: 487px;
+      &--rip{
+        font-style: normal;
+        font-weight: bold;
+        margin-top: 30%;
+        font-size: 50px;
+        margin-left: 100px;
+        line-height: 59px;
+        color: $white;
+        &--btn{
+          margin-top: 20%;
+          margin-left: 24%;
+          padding: 10px 38px;
+          background: none;
+          border: 1px solid $color;
+          box-sizing: border-box;
+          border-radius: 10px;
+          font-size: 20px;
+          color: $color;
+          &:focus{
+            background: $color;
+            border: 0.5px solid $white;
+            color: $white;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 15px $color;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
